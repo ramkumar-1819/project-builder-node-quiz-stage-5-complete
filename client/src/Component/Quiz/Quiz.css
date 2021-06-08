@@ -1,0 +1,89 @@
+/*Home Section*/
+.home{
+    position: relative;
+    align-items: center;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    height: 80vh;
+    margin: 60px auto;
+    padding-top: 50px;
+    width:80vw;
+    
+}
+/*questionSection ie(Number,name,timer)*/
+#questionSection{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    width: 100%;
+}
+.questionName{
+    margin-right: 8px;
+}
+/*styling questionNumber and the timer*/
+.questionNumber,.timer{
+    margin: 0 20px;
+}
+/*styling the answer section*/
+.answers{
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    height: 40vh;
+    width: 80vw ;
+}
+.answers>div{
+    background-color:rgb(25, 158, 211);
+    border-radius: 20px;
+    cursor: pointer;
+    line-height: 40px;
+    height: 40px;
+    text-align: center;
+    width:450px;
+}
+/*buttons - next,quit,prevoius*/
+.footer{
+    display: flex;
+    justify-content: space-around;
+    width:300px;
+}
+.footer>button{
+    border: none;
+    color: white;
+    cursor: pointer;
+    height: 25px;
+    outline: none;
+    width:75px;
+}
+#prev{
+    background-color: orange;
+}
+#next{
+    background-color: green;
+}
+#quit{
+    background-color: red;
+}
+/*styling the right/wrong answer popup*/
+#answer_type{
+    border: 1px solid black;
+    color: white;
+    font-size: small;
+    padding: 5px;
+    position: absolute;
+    right:5px;
+    visibility: hidden;
+}
+@keyframes example {
+    from {transform: translateY(0px);}
+    to {
+        transform: translateY(-30px);
+        visibility: visible;
+    }
+}
+.animation{
+    animation-name: example;
+    animation-duration: 0.5s;
+}

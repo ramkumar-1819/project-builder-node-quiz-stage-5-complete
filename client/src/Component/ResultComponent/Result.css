@@ -1,0 +1,65 @@
+
+.result{
+    margin-top: 40px;
+}
+img{
+    margin: auto;
+    display: block;
+    padding: 2px;
+    width:50px;
+    border:5px solid rgb(6, 248, 6);
+    border-radius: 50%;
+}
+.res{
+    margin:20px 0 20px 0;
+}
+.res>div{
+    text-align: center;
+    color:rgb(26, 218, 26);
+    font-size:xx-large;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+.box{
+    margin: auto;
+    width:500px;
+    height:250px;
+    background-color: white;
+}
+.box>div:nth-child(1),.box>div:nth-child(2){
+    background-color: white;
+    text-align: center;
+    font-size: x-large;
+    padding:20px 0 0 0;
+}
+.box> div:nth-child(2){
+    font-size: xx-large;
+    color: blue;
+}
+.box>pre{
+    margin:0 10px;
+    font-family: 'Times New Roman', Times, serif;
+    display: flex;
+    justify-content: space-between;
+}
+pre>span{
+    padding-top: 10px;
+}
+.result button{
+    position: relative;
+    top:10px;
+    left: 40%;
+    cursor: pointer;
+    margin-left: 20px;
+    outline: none;
+    width:100px;
+    background:none;
+}
+.play{
+    border: 1px solid blue;
+    color: blue;
+}
+.stop{
+    border: 1px solid rgb(11, 235, 11);
+    color: rgb(11, 235, 11);
+}
